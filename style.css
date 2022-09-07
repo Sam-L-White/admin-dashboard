@@ -133,21 +133,52 @@ html{
     grid-template-rows: 1fr 1fr;
     background-color: white;
     box-shadow:  0px 7px 7px grey;
+    gap: 30px;
 }
 
 .upper-row{
     display: grid;
-    grid-template-columns: 6fr 1fr 1fr 1fr;
+    grid-template-columns: 36px 56vw 36px 75px 100px;
     grid-row: 1 / 2;
     margin-top: 25px;
     margin-left: 50px;
+    gap: 25px;
 }
 
+.search-icon{
+    
+    align-self: center;
+}
+
+
+.upper-row form{
+    align-self: center;
+}
 .upper-row input{
     width: 35vw;
     border-radius: 25px;
-    height: 25px;
+    height: 35px;
     background-color: #e2e8f0;
+    border-style: none;
+    
+}
+
+.notification-icon{
+    align-self: center;
+}
+
+.profile-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+
+.profile-name{
+    font-size: 30px;
+    width: 100px;
+    white-space: nowrap;
+    align-self: center;
+    font-weight: bold;
 }
 
 .lower-row{
