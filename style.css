@@ -132,7 +132,7 @@ html{
     display: grid;
     grid-template-rows: 1fr 1fr;
     background-color: white;
-    box-shadow:  0px 7px 7px grey;
+    box-shadow:  0px 7px 7px rgb(172, 170, 170);
     gap: 30px;
 }
 
@@ -223,12 +223,13 @@ html{
 
 .main-content{
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 240px 1fr;
     background-color: #e2e8f0;
 }
 
 .content{
     display: grid;
+    
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-left: 25px;
@@ -255,43 +256,52 @@ html{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 40px;
+    height: 90%;
     
 }
 
 .projects .project{
-    height: 300px;
+    
     background-color: white;
-    display: grid;
+    
     border-radius: 20px;
     
     border-style: solid;
     border-width: 10px;
     border-color: white;
     border-left-color: #f0b429;
-    box-shadow:  0px 7px 7px grey;
+    box-shadow:  0px 5px 5px rgb(196, 193, 193);
+
+    padding-left: 25px;
 }
 
 .project-header{
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-content{
+    font-size: 20px;
+    color: grey;
 }
 
 .announcements{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     margin-top: 25px;
+    
 }
 
 .announcements h2{
     font-size: 25px;
-    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 .announcement-container{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-   
-
-    height: 425px;
+    
+    
     background-color: white;
     
     border-radius: 20px;
@@ -299,16 +309,84 @@ html{
     border-style: solid;
     border-width: 10px;
     border-color: white;
-    
-    box-shadow:  0px 7px 7px grey;
+    padding: 25px;
+    box-shadow:  0px 5px 5px rgb(196, 193, 193);
     margin-right: 40px;
 }
 
-.trending{
+.announcement h3{
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.announcement{
+    border-bottom-color: rgba(0, 0, 0, 0.205);
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: grey;
     
+}
+
+.announcement-final{
+    border-bottom-style: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    color: grey;
+    
+}
+
+.announcement-final h3{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: black;
+    
+}
+
+.trending{
+    margin-top: -8px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
-    margin-top: 25px;
+    
+}
+
+.trending-images img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    
+}
+
+.trending-text{
+    display: grid;
+    margin-left: 20px;
+    
+}
+
+.trending-people{
+    height: 75px;
+    align-self: center;
+    padding-top: 20px;
+}
+
+.trending-people h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.trending-people p{
+    color: grey;
+    padding-top: 5px;
+}
+
+.trending-images{
+    display: grid;  
 }
 
 .trending h2{
@@ -317,10 +395,11 @@ html{
 }
 .trending-container{
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 75px 1fr;
+    
    
 
-    height: 425px;
+    
     background-color: white;
     
     border-radius: 20px;
@@ -329,6 +408,6 @@ html{
     border-width: 10px;
     border-color: white;
     
-    box-shadow:  0px 7px 7px grey;
+    box-shadow:  0px 5px 5px rgb(196, 193, 193);
     margin-right: 40px;
 }
