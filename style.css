@@ -48,6 +48,14 @@ table {
 }
 
 
+
+
+
+html{
+    font-family: 'Signika';
+}
+
+
 .container{
     display: grid;
     grid-template-columns: 1fr 5fr;
@@ -55,33 +63,69 @@ table {
 }
 
 .sidebar{
-    display: grid;
-    grid-template-rows: 100px 300px 150px;
+    
     grid-column: 1 / 2;
-    gap: 30px;
+    
     background-color: #1992d4;
     color: white;
+    padding-left: 25px;
+    padding-top: 25px;
+    font-weight: 600;
 }
 
 .header{
-    
+    height: 100px;
 }
 
+.sidebar h1{
+    font-size: 40px;
+
+}
 .upper-list{
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    gap: 5px;
-    font-size: 20px;
-    
-    
+    grid-template-columns: 36px 1fr;
+    font-size: 30px;
+    margin-bottom: 75px;
 }
+
+.upper-list-labels{
+    display: grid;
+    gap: 20px;
+}
+
+.upper-list-icons{
+    display: grid;
+    gap: 20px;
+}
+
+.upper-list p{
+    line-height: 36px;
+    margin-left: 30px;
+    height: 36px;     
+}
+
+
 
 .lower-list{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5px;
-    font-size: 20px;
-   
+    grid-template-columns: 36px 1fr;
+    font-size: 30px;
+}
+
+.lower-list-labels{
+    display: grid;
+    gap: 20px;
+}
+
+.lower-list-icons{
+    display: grid;
+    gap: 20px;
+}
+
+.lower-list p{
+    line-height: 36px;
+    margin-left: 30px;
+    height: 36px;     
 }
 
 .top-bar{
@@ -95,6 +139,15 @@ table {
     display: grid;
     grid-template-columns: 6fr 1fr 1fr 1fr;
     grid-row: 1 / 2;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.upper-row input{
+    width: 35vw;
+    border-radius: 25px;
+    height: 25px;
+    background-color: #e2e8f0;
 }
 
 .lower-row{
@@ -118,7 +171,7 @@ table {
 
 .main-content{
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 6fr;
     background-color: #e2e8f0;
 }
 
@@ -200,8 +253,30 @@ table {
 }
 
 .trending{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    margin-top: 25px;
+}
+
+.trending h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.trending-container{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+   
+
+    height: 425px;
+    background-color: white;
+    
+    border-radius: 20px;
+    
+    border-style: solid;
+    border-width: 10px;
+    border-color: white;
+    
+    box-shadow:  0px 7px 7px grey;
+    margin-right: 40px;
 }
